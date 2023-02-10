@@ -14,9 +14,9 @@ Data involved eleven structures. In particular, two structures contain the adjac
 
 |Name 	                                                   | Size 	  | Bytes   | Class  |	Description|
 |----------------------------------------------------------|--------------------|--------|-------------|--------------------------------------------------------------
-|DATA                                                      | 1X1      | 1713152 | struct |  Stimulus_locked: activity anchored to Go and NoGo stimuli. Response_locked: activity anchored to Correct and Error responses.|
-|DATA.stimulus_locked                                      | 1x1      | 861920  | struct |  ERP: Event-Related Potential. ERSP: Event-Related Spectral Perturbation (Theta frequency band).|
-|DATA.response_locked                                      | 1x1      | 850880  | struct |  ERP: Event-Related Potential. ERSP: Event-Related Spectral Perturbation (Theta frequency band).|
+|adjacency_matrices_normalized_all_thresholds              | 1X2      | 1982832 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|adjacency_matrices_normalized_all_thresholds{1} and {2}   | 1x1      | 991312  | struct |  Adjacency matrices in theta and alpha frequency bands |
+|adjacency_matrices_normalized_all_thresholds{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x14x8x79      | 495488  | single | Channels, Channels,Thresholds, Subjects  |
 |DATA.stimulus_locked.ERP and .ERSP                        | 1x2      | 430784  | cell   |  Cell n1: pre-intervention session. Cell n2: post-intervention session.|
 |DATA.response_locked.ERP and .ERSP                        | 1x2      | 425264  | cell   |  Cell n1: pre-intervention session. Cell n2: post-intervention session.|
 |DATA.stimulus_locked.ERP{1}, .ERP{2}, ERSP{1} and ERSP{2} | 115x78x3 | 215280  | double |  Samples, Subjects, Correct trials: 1- Go; 2- NoGo; 3- NoGo minus Go.|
