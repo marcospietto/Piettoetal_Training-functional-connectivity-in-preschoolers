@@ -29,3 +29,22 @@ Data involved eleven structures. In particular, two structures contain the adjac
 |small_worldness_all_thresholds                       | 1X2      | 10992 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
 |small_worldness_all_thresholds{1} and {2}   | 1x1      | 5392  | struct |  Small worldness parameters in theta and alpha frequency bands |
 |small_worldness_all_thresholds{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 79x8      | 2528  | single | Subjects, Thresholds |
+|clustering_coef_all_channels                       | 1X2      | 18576 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|clustering_coef_all_channels{1} and {2}   | 1x1      | 9184  | struct |  Clustering coefficients of all channels in theta and alpha frequency bands |
+|clustering_coef_all_channels{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x79      | 4424  | single | Channels, Subjects ||clustering_coef_all_channels                       | 1X2      | 18576 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|clustering_coef_all_channels{1} and {2}   | 1x1      | 9184  | struct |  Clustering coefficients of all channels in theta and alpha frequency bands |
+|clustering_coef_all_channels{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x79      | 4424  | single | Channels, Subjects |
+|strength_all_channels                       | 1X2      | 18576 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|strength_all_channels{1} and {2}   | 1x1      | 9184  | struct |  Strength parameters of all channels in theta and alpha frequency bands |
+|strength_all_channels{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x79      | 4424  | single | Channels, Subjects |
+|strength_long_range_all_channels                       | 1X2      | 36272 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|strength_long_range_all_channels{1} and {2}   | 1x1      | 18032  | struct |  Strength of long-range connections of all channels in theta and alpha frequency bands |
+|strength_long_range_all_channels{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x79      | 8848  | double | Channels, Subjects |
+|strength_short_range_all_channels                       | 1X2      | 36272 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|strength_short_range_all_channels{1} and {2}   | 1x1      | 18032  | struct |  Strength of short-range connections of all channels in theta and alpha frequency bands |
+|strength_short_range_all_channels{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x79      | 8848  | double | Channels, Subjects |
+|means_all_brain_network_measures                       | 1X1      | 9916 | struct |  data: Network metrics. Varnames: metrics's names |
+|means_all_brain_network_measures.data                  | 1x2      | 7792  | cell |  Strength of short-range connections of all channels in theta and alpha frequency bands |
+|means_all_brain_network_measures.data{1} and .data{2} | 79x12      | 3792  | single | Subjects, Metrics |
+|means_all_brain_network_measures.varnames | 1x12      | 1788  | cell | Metrics's names |
+|GROUPS | 79x1      | 632  | Double | subject's group ID: 1 - Control low-performers; 2 - Control high-performers; 3 - Experimental low-performers; 4 - Experimental high-performers |
