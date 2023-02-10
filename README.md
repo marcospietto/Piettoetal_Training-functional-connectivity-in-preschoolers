@@ -46,5 +46,10 @@ Data involved eleven structures. In particular, two structures contain the adjac
 |means_all_brain_network_measures                       | 1X1      | 9916 | struct |  data: Network metrics. Varnames: metrics's names |
 |means_all_brain_network_measures.data                  | 1x2      | 7792  | cell |  Strength of short-range connections of all channels in theta and alpha frequency bands |
 |means_all_brain_network_measures.data{1} and .data{2} | 79x12      | 3792  | single | Subjects, Metrics |
-|means_all_brain_network_measures.varnames | 1x12      | 1788  | cell | Metrics's names |
-|GROUPS | 79x1      | 632  | Double | subject's group ID: 1 - Control low-performers; 2 - Control high-performers; 3 - Experimental low-performers; 4 - Experimental high-performers |
+|means_all_brain_network_measures.varnames | 1x12      | 1788  | cell | Metrics names |
+|GROUPS | 79x1      | 632  | Double | Subject's group ID |
+
+Note.
+Thresholds levels: 1 = 0.2; 2 = 0.3; 3 = 0.4; 4 = 0.5; 5 = 0.6; 6 = 0.7; 7 = 0.8; 8 = 0.9.
+Channels names: 1 = AF3;  2 = F7; 3 = F3; 4 = FC5; 5 = T7; 6 = P7; 7 = O1; 8 = O2; 9 = P8; 10 = T8; 11 = FC6; 12 = F4; 13 = F8; 14 = AF4.
+Subject's group ID: 1 = Control low-performers; 2 = Control high-performers; 3 = Experimental low-performers; 4 = Experimental high-performers.
