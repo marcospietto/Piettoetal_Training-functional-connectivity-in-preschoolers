@@ -20,3 +20,12 @@ Data involved eleven structures. In particular, two structures contain the adjac
 |adjacency_matrices_normalized_all_thresholds_random       | 1X2      | 1982832 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
 |adjacency_matrices_normalized_all_thresholds_random{1} and {2}   | 1x1      | 991312  | struct |  Adjacency matrices in theta and alpha frequency bands |
 |adjacency_matrices_normalized_all_thresholds_random{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 14x14x8x79      | 495488  | single | Channels, Channels,Thresholds, Subjects  |
+|means_clustering_coef_all_thresholds                       | 1X2      | 21104 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|means_clustering_coef_all_thresholds{1} and {2}   | 1x1      | 10448  | struct |  Clustering coefficients of networks in theta and alpha frequency bands |
+|means_clustering_coef_all_thresholds{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 79x8x2      | 5056  | single | Subjects, Thresholds, Type of network |
+|means_path_length_all_thresholds                       | 1X2      | 41328 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|means_path_length_all_thresholds{1} and {2}   | 1x1      | 20560  | struct |  Path lengths of networks in theta and alpha frequency bands |
+|means_path_length_all_thresholds{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 79x8x2      | 10112  | double | Subjects, Thresholds, Type of network |
+|small_worldness_all_thresholds                       | 1X2      | 10992 | cell |  Cell n1: pre-intervention session. Cell n2: post-intervention session |
+|small_worldness_all_thresholds{1} and {2}   | 1x1      | 5392  | struct |  Small worldness parameters in theta and alpha frequency bands |
+|small_worldness_all_thresholds{1}.Theta, {1}.Alpha, {2}.Theta and {2}.Alpha | 79x8      | 2528  | single | Subjects, Thresholds |
